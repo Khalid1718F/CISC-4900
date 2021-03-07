@@ -13,10 +13,10 @@ Sections VC1C & VC1B
 Supervisor:
 <br/>
 Contact email:
-<br/>
-<br/>
 
-<H2>Abstract:<H2/>
+
+
+<h1>Abstract:<h1/>
 
 Mazes are absolutely amazing! Imagine the thrill of running, avoiding enemies and obstacles,
 and that gratifyingly triumphant feeling of reaching the exit if you can! Besides being a loads of fun,
@@ -76,6 +76,17 @@ Stage #3: In this third stage the players should be able to have 5 menu options:
           
 <br/>
 
+Stage #4: In this fourth stage the players should be able to find a way out of the maze.
+
+          a. Player should be able to find a way to escape the maze.
+          b. This option should be available only if a current maze exists.
+          c. Data about the escape path should not be saved to the files and not display an escape path when user chooses to do so.
+          d. The escape symbol should be marked with the '/' symbol.
+          e. After starting, the program must print a menu listing only appropriate options.
+          f. When a user has chosen an option, the program must perform the corresponding action.
+          g. Most importantly, the program shouldn’t stop unless the user selects the exit option.
+          
+<br/>
      
           
 
