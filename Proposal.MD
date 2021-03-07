@@ -1,4 +1,4 @@
-..Maze Runner..
+**Maze Runner**
 <br/>
 <br/>
 <br/>
@@ -16,20 +16,20 @@ Contact email:
 <br/>
 <br/>
 
-..Abstract:..
+**Abstract:**
 
 Mazes are absolutely amazing! Imagine the thrill of running, avoiding enemies and obstacles,
-and that gratifyingly triumphant feeling of reachingthe exit if you can! Besides being a loads of fun,
+and that gratifyingly triumphant feeling of reaching the exit if you can! Besides being a loads of fun,
 maze games are actually valuable learning tools for children and adults alike.
-Maze solving games has numerous benefits which are included but not limited to:
+Maze solving games has numerous benefits including but not limited to:
 1) Improvement of patience and persistence in players.
-2) The enhancement of cognotive snd deductive reasoning abilities.
+2) The enhancement of cognotive and deductive reasoning abilities.
 3) Excellent in the improvement of hand-eye coordination.
 4) Development of memory improvement and strategic planning.
 
-..Project Details:..
+**Project Details:**
 
-The project will be broken up into several stages each with the purpose accomplishing differnt tasks.
+The project will be broken up into several stages with the purpose of accomplishing differnt tasks.
 Here is a break down of the steps in sequence:
 <br/>
 
