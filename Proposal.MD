@@ -1,4 +1,4 @@
-#Maze Runner#
+..Maze Runner..
 <br/>
 <br/>
 <br/>
@@ -16,7 +16,7 @@ Contact email:
 <br/>
 <br/>
 
-##Abstract:##
+..Abstract:..
 
 Mazes are absolutely amazing! Imagine the thrill of running, avoiding enemies and obstacles,
 and that gratifyingly triumphant feeling of reachingthe exit if you can! Besides being a loads of fun,
@@ -27,7 +27,7 @@ Maze solving games has numerous benefits which are included but not limited to:
 3) Excellent in the improvement of hand-eye coordination.
 4) Development of memory improvement and strategic planning.
 
-#Project Details:#
+..Project Details:..
 
 The project will be broken up into several stages each with the purpose accomplishing differnt tasks.
 Here is a break down of the steps in sequence:
