@@ -16,7 +16,7 @@ Contact email:
 
 
 
-<h1>Abstract:<h1/>
+Abstract:
 
 Mazes are absolutely amazing! Imagine the thrill of running, avoiding enemies and obstacles,
 and that gratifyingly triumphant feeling of reaching the exit if you can! Besides being a loads of fun,
