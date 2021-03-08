@@ -96,7 +96,11 @@ Stage #5: In this fifth stage the enemy is trying to catch the player.
           d. At any time the player can choose the option to generate a new maze.
           
 <br/>
-          
+     
+Background:
+
+The project will be implemented in Java and a graphical user interface will be included.
+     
 **Estimated timeline:**<br/>
 Define the interfaces between the game representation and GUI, weeks 6-7<br/>
 Implement the maze and its graphical representation, weeks 7-8<br/>
