@@ -97,7 +97,7 @@ Stage #5: In this fifth stage the enemy is trying to catch the player.
           
 <br/>
           
-**Estimated timeline:**
+**Estimated timeline:**<br/>
 Define the interfaces between the game representation and GUI, weeks 6-7<br/>
 Implement the maze and its graphical representation, weeks 7-8<br/>
 Implement the algorithm for building the maze and complete stage 3, week 9<br/>
