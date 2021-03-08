@@ -29,7 +29,7 @@ Maze solving games has numerous benefits which are included but not limited to:
 
 ***Project Details:***
 
-The project will be broken up into several stages each with the purpose accomplishing differnt tasks.
+The project will be broken up into several stages each with the purpose accomplishing different tasks.
 Here is a break down of the steps in sequence:
 <br/>
 
@@ -88,14 +88,20 @@ Stage #4: In this fourth stage the players should be able to find a way out of t
           
 <br/>
      
+Stage #5: In this fifth stage the enemy is trying to catch the player.
+
+          a. The enemy should find its way in the maze to catch the player.
+          b. The player will be given 3-5 tries to complete the maze without being caught by the enemy.
+          c. If the player is unsuccessful 3-5 times in a row, "Game Over" is displayed and the player will be given the option to retry this maze or generate a new one.
+          d. At any time the player can choose the option to generate a new maze.
           
-
-
-
-
-
-
-
-
-
+<br/>
+          
+**Estimated timeline:**
+Define the interfaces between the game representation and GUI, weeks 6-7
+Implement the maze and its graphical representation, weeks 7-8
+Implement the algorithm for building the maze and complete stage 3, week 9
+Implement the enemy and its graphical representation, weeks 10-11
+Test game with users, weeks 12-13
+Prepare final report and submit, weeks 14-15
 
