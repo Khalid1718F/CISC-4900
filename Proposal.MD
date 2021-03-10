@@ -10,9 +10,9 @@ Contact emails: Khalid.Ahmed9119@gmail.com, cisc4900@mail.com
 Sections VC1C & VC1B
 <br/>
 <br/>
-Supervisor:
+Supervisor: Allan James Lapid
 <br/>
-Contact email:
+Contact email: allanjames.lapid@brooklyn.cuny.edu
 
 
 
