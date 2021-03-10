@@ -100,18 +100,17 @@ Stage #5: In this fifth stage the enemy is trying to catch the player.
 Technical Overview:
 
 The project will be implemented in Java and a graphical user interface will be included.
-We will mainly be using IntelliJ IDEA for this project along with some scala.
-In Stage #3 we will be implementing Prims algorithm, along with Kruskal's algorithm.
+In Stage #2 we will be implementing Prims algorithm, along with Kruskal's algorithm.
 This stage will use appropriate graph algorithms, to enable the program to generate a random maze of a given size.
-In Stage #4 there will also be datastructures involved to teach the program to trace a way out of the trickiest mazes.
-There will also be several OOP paradigms that will be used during the development of this game.
+In Stage #4 there will also be data structures involved to teach the program to trace a way out of the trickiest mazes.
+There will also be several OOP concepts that will be used during the development of this game.
 
 Background:
 
-We both have a decent understanding of OOP but are less adept at Algorithms and Data Structures.
-Since our core programming classes were Java based we regarded this project as a perfect fit for us.
-There are certain concepts that were not covered in our studies throught our academic careers.
-This is why a project such as this seems like a perfect opportunity to help us sharpen our tools.
+We both have a decent understanding of OOP.
+Since our core programming classes were Java based we regard this project as a good fit for us.
+There are certain concepts that were not covered in our academic studies.
+This is why a project such as this seems like a good opportunity to help us sharpen our skills.
      
 **Estimated timeline:**<br/>
 Define the interfaces between the game representation and GUI, weeks 6-7<br/>
