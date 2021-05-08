@@ -1,57 +1,93 @@
-package mazerunner;
-
+// Importing the necessary packages and libraries
+package maze;
 import java.io.*;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
-/**
- *
- * @author Jonathan
- */
-interface Maze {
-    
-    /*
-    Generates and returns a 2D int array representing a maze
-    @param width width of the maze
-    @param height height of the maze
-    @returns 2D int array representing a maze. Cells with walls are marked with '1'.
-            Cells without walls are marked with '0'.
-    */
-    int[][] generateMaze(int width, int height);
-    
-    /*
-    Loads a maze from file and returns as a 2D int array.
-    @param file the file that may contain a maze
-    @returns 2D int array representing a maze. Cells with walls are marked with '1'.
-            Cells without walls are marked with '0'.
-    @throws Exception if file doesn't contain a maze. The message must say
-                      "Incorrect file format."
-    @throws FileNotFoundException if the file doesn't exist
-    */
-    int[][] loadMaze(File file) throws Exception, FileNotFoundException;
-    
-    /*
-    Saves the current maze to file.
-    @param file the file to which the current maze will be saved
-    @returns true if successful, otherwise returns false
-    @throws Exception if file name already exists. The message must say
-                    "File name already exists."
-    */
-    boolean saveMaze(File file) throws Exception;
-    
-    /*
-    Gets a 2D int array with '1' in cells where escape path lies, other
-    cells must be '0'.
-    @returns a 2D int array with '1' in cells where escape path lies, other
-            cells must contain '0'.
-    */
-    int[][] getEscapePath();
-    
+// Creating class Main
+public class Maze {
+    private String[][] maze; //Creating a 2-D array of type String to represent the maze.
+    private int height; //Creating an Integer variable to store height of the maze.
+    private int width; //Creating an Integer variable to store the width of the maze.l
+
+    public Maze(int height, int width) //Creating a constructor with the height & width as parameters.
+    {
+        //Including this in in the maze package in order to generate a new maze using the PrimAlgorithm.
+        this.maze = PrimAlgorithm.generateMazeWithPrimAlgorithm(height, width);
+        this.height = height; //setting height
+        this.width = width; //setting width
+    }
+
+    //Creating a function to build the maze.
+    public void printMaze()
+    {
+        for (int i = 0; i < height; i++) //Looping to traverse the height.
+        {
+            for (int j = 0; j < width; j++) //Looping to traverse the width.
+            {
+                System.out.print(maze[i][j]); //Printing element in the maze at index {i,j}
+            }
+            System.out.println(); //Printing a new line.
+        }
+    }
+
+    //Creating a function to save data to the file where file it passed as an argument.
+    public boolean saveToFile(File file)
+    {
+        //Making FileWriter object to write data into file
+        try (FileWriter writer = new FileWriter(file)) {
+            //Writing the height and width to the file where the data is stored.
+            writer.write(height + " " + width + "\n");
+
+            for (int i = 0; i < height; i++) {
+                for (int j = 0; j < width; j++) {
+                    writer.write(maze[i][j]); //Writing element at index {i,j} into the file.
+                }
+                writer.write("\n"); //Adding a newline.
+            }
+
+            //Catching an IO exception to check if the file is correctly opened or not.
+        } catch (IOException e) {
+            //Displays text to the user if the file cannot be saved and shows the faulty file name.
+            System.out.println("Cannot save the maze. It has an invalid format " + file);
+            return false; //Returns a false value.
+        }
+        return true; //If an exception does not occur then a value of true will be returned.
+    }
+
+    //Creating a function which is used to read the data from a file where file is passed as an argument.
+    public boolean loadFromFile(File file)
+    {
+        try (Scanner scanner = new Scanner(file)) { //Making scanner object to read from file.
+            String[] mazeSize = scanner.nextLine().split(" "); //Reading the first line of words into mazeSize array.
+            int tempHeight = Integer.parseInt(mazeSize[0]); //The string at 0-th index will be height, and will convert the string into an integer value.
+            int tempWeight = Integer.parseInt(mazeSize[1]); //The string at 1-st index will be width, and will convert the string into an integer value.
+
+            String[][] tempMaze = new String[tempHeight][tempWeight]; //Creating a new String type array of size height * width.
+
+            for (int i = 0; i < tempHeight; i++) {
+                String line = scanner.nextLine(); //Reading a line from the file.
+                int k = 0;
+                for (int j = 0; j < tempWeight; j++) {
+                    tempMaze[i][j] = line.charAt(k) + "" + line.charAt(k + 1); //Storing the value at index k and k+1 of the line into our maze.
+                    k += 2; //Incrementing k by 2.
+                }
+            }
+
+            height = tempHeight; //Assigning height to tempHeight.
+            width = tempWeight; //Assigning width to tempWeight.
+            maze = tempMaze; //Assigning maze to tempMaze.
+
+        } catch (FileNotFoundException ex) { //Checking for an exception whether or not the file exists.
+            //Displaying error message to the user to demonstrate that the file exists.
+            System.out.println("The file " + file + " does not exist");
+            return false; //If file does not exist a false value is returned.
+            //Checking if index is out of bounds and if no such exception exists.
+        } catch (IndexOutOfBoundsException | NoSuchElementException | NumberFormatException exc) {
+            //Displaying error message to user that maze does not exist and returns a false value.
+            System.out.println("Cannot load the maze. It has an invalid format");
+            return false;
+        }
+        return true; //if no exception occurs then true value is returned.
+    }
 }
-
-
-
-
-
-
-
-
-
