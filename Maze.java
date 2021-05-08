@@ -90,4 +90,18 @@ public class Maze {
         }
         return true; //if no exception occurs then true value is returned.
     }
+    
+    public int[][] getMaze(){
+        int[][] m = new int[height][width];
+        for(int i = 0; i < height; i++){
+            for(int j = 0; j < width; j++){
+                if(maze[i][j].equals("\u2588\u2588"){
+                    m[i][j] = 1;
+                }else{
+                    m[i][j] = 0;
+                }
+            }
+        }
+        return m;
+    }
 }
