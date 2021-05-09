@@ -4,6 +4,10 @@ import java.io.*;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+/**
+*@author Khalid
+*/
+
 // Creating class Main
 public class Maze {
     private String[][] maze; //Creating a 2-D array of type String to represent the maze.
