@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+*@author Khalid
+*/
+
 public class PrimAlgorithm {
     private static final Random random = new Random();
     private static final List<String> minimumSpanningTree = new ArrayList<>();
