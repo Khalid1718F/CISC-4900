@@ -1,3 +1,4 @@
+//Importing necassary packages and libraries.
 package maze;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +8,9 @@ import java.util.Random;
 *@author Khalid
 */
 
+//Creating a Prim algorithm class.
 public class PrimAlgorithm {
-    private static final Random random = new Random();
+    private static final Random random = new Random(); 
     private static final List<String> minimumSpanningTree = new ArrayList<>();
     private static final List<String> nodesInTree = new ArrayList<>();
     private static int[][] nodeMatrix;
