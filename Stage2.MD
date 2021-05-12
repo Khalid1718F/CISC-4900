@@ -11,7 +11,7 @@
 	<li>The maze should not contain 3x3 blocks consisting of walls only. Try to fill the entire maze area with pathways.</li>
 </ol>
 
-<p>There is a very good algorithm for building a maze, based on the construction of a minimal spanning tree. You can <a target="_blank" href="https://www.youtube.com/watch?v=KurrmC-sd6k" rel="noopener noreferrer nofollow">watch the video</a> on how this algorithm works.</p>
+<p>There is a very good algorithm for building a maze, based on the construction of a minimal spanning tree.</p>
 
 <p>It should be possible to specify the size of the maze. After a user enters the size, the program must print a maze and then stop.</p>
 
