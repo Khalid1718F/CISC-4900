@@ -1,28 +1,33 @@
-//Importing necassary packages and libraries.
+//Importing the necassary packages and files for the program.
 package maze;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 /**
-*@author Khalid
-*/
+ * @author khalidahmed
+ */
 
-//Creating a Prim algorithm class.
+//Creating a publicly accessible class named PrimAlgorithm with private instance variables.
 public class PrimAlgorithm {
-    private static final Random random = new Random(); 
+    //Creating a new instance constructor from the Random package impoted aboove.
+    private static final Random random = new Random();
+    //Declaring 2 List interfaces of type string to create a new array list and assignning them.
     private static final List<String> minimumSpanningTree = new ArrayList<>();
     private static final List<String> nodesInTree = new ArrayList<>();
+    //Declaring a pair instance variables of type 2D integer arrays.
     private static int[][] nodeMatrix;
     private static int[][] weightsMatrix;
+    //Declaring and initializing 5 integer type instance fields.
     private static int weightsMatrixSize = 0;
     private static int primHeight = 0;
     private static int primWidth = 0;
     private static int mazeHeight = 0;
     private static int mazeWidth = 0;
+    //Declaring an instance variable of type 2D string arrays.
     private static String[][] maze;
 
-
+    
     public static String[][] generateMazeWithPrimAlgorithm(int height, int width) {
         minimumSpanningTree.clear();
         nodesInTree.clear();
