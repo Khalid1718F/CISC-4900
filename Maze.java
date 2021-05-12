@@ -5,10 +5,11 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
-*@author Khalid
-*/
+ * @author khalidahmed
+ */
 
-// Creating class Main
+
+// Creating class called Maze.
 public class Maze {
     private String[][] maze; //Creating a 2-D array of type String to represent the maze.
     private int height; //Creating an Integer variable to store height of the maze.
@@ -95,11 +96,16 @@ public class Maze {
         return true; //if no exception occurs then true value is returned.
     }
     
+    //Creating a publically accessible function that returns a 2D integer array and takes no parameters.
     public int[][] getMaze(){
+        //Creating a new instance of a 2D array object that takes in height annd width as it's indices.
         int[][] m = new int[height][width];
+        //Creating a nested for loop where height and width are evaluated and iterated over. 
         for(int i = 0; i < height; i++){
             for(int j = 0; j < width; j++){
-                if(maze[i][j].equals("\u2588\u2588"){
+                //If the height and width are at maze sub i & maze sub j and it also equals a block
+                //then the value of m at i and j are equal to 1 otherwise theyre equal to 0 and m is returned.
+                if(maze[i][j].equals("\u2588\u2588")) {
                     m[i][j] = 1;
                 }else{
                     m[i][j] = 0;
