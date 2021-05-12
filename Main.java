@@ -4,9 +4,8 @@ import java.io.File;
 import java.util.Scanner;
 
 /**
-*@author Khalid
-*/
-
+ * @author khalidahmed
+ */
 // Creating a Main class.
 public class Main {
     // A static variable to hold the state if maze is created or not
