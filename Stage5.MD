@@ -18,7 +18,7 @@
 <img width="500" alt="Stage 5 part2" src="https://user-images.githubusercontent.com/63851527/118560702-e6e84c80-b737-11eb-8030-fc1e49daa5f0.png">
 
 <p>Upon entering the set values in the dialog box a maze will be generated.
-  This maze will have a beginning and end point</p>
+  This maze will have a beginning and end point.</p>
   
 <img width="609" alt="Stage5 part 3" src="https://user-images.githubusercontent.com/63851527/118560840-1e56f900-b738-11eb-96d2-04c991a32889.png">
 
