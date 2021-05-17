@@ -14,7 +14,7 @@ Building a maze runner game using Java.
 
 <br>
 
-<H3>Stage 5</H3>
+<H3><em>Stage 5</em></H3>
 <br>
 <p>However if you would like to run the fifth stage which includes the GUI 
    user must run the MazeRunner.java file as the main file and place the Main.java
