@@ -22,7 +22,7 @@
   
 <img width="609" alt="Stage5 part 3" src="https://user-images.githubusercontent.com/63851527/118560840-1e56f900-b738-11eb-96d2-04c991a32889.png">
 
-<p>Once the user has traversed through the maze they will reach the end point</p>
+<p>Once the user has traversed through the maze they will reach the end point.</p>
 
 <img width="609" alt="Stage 5 part4" src="https://user-images.githubusercontent.com/63851527/118560933-45152f80-b738-11eb-9427-7ca6c7a13312.png">
 
