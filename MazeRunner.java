@@ -65,7 +65,7 @@ public class MazeRunner {
             JOptionPane.showMessageDialog(
                     frame,
                     o,
-                    "Enter the size of a maze",
+                    "Enter the size of a maze: ",
                     JOptionPane.QUESTION_MESSAGE);
             try{
                 width = Integer.parseInt(widthField.getText());
@@ -74,7 +74,7 @@ public class MazeRunner {
                 JOptionPane.showMessageDialog(
                         frame,
                         "Width and height should be specified as integers.",
-                        "Error",
+                        "Error!",
                         JOptionPane.ERROR_MESSAGE);
                 return;
             }
@@ -83,7 +83,7 @@ public class MazeRunner {
                 JOptionPane.showMessageDialog(
                         frame,
                         "Width and height should be greater than 4.",
-                        "Wrong size",
+                        "Wrong size!",
                         JOptionPane.ERROR_MESSAGE);
             }else{
                 maze = new Maze(height, width);
@@ -121,7 +121,7 @@ public class MazeRunner {
                     JOptionPane.showMessageDialog(
                             frame,
                             "Something went wrong.",
-                            "Error",
+                            "Error!",
                             JOptionPane.ERROR_MESSAGE);
                 }
         });
@@ -181,7 +181,7 @@ public class MazeRunner {
             super.paintComponent(g);
             if(won){
                 g.setColor(Color.BLACK);
-                g.drawString("you won", (getWidth() / 2) - 25, getHeight() / 2);
+                g.drawString("You Won!", (getWidth() / 2) - 25, getHeight() / 2);
                 return;
             }
             g.setColor(Color.BLACK);
